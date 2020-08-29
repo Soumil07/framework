@@ -4,12 +4,6 @@ exports.Logger = void 0;
 require("./ILogger");
 class Logger {
     constructor(level) {
-        Object.defineProperty(this, "level", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
         this.level = level;
     }
     trace(...values) {
@@ -39,17 +33,12 @@ class Logger {
     }
 }
 exports.Logger = Logger;
-Object.defineProperty(Logger, "levels", {
-    enumerable: true,
-    configurable: true,
-    writable: true,
-    value: new Map([
-        [10 /* Trace */, 'trace'],
-        [20 /* Debug */, 'debug'],
-        [30 /* Info */, 'info'],
-        [40 /* Warn */, 'warn'],
-        [50 /* Error */, 'error'],
-        [60 /* Fatal */, 'error']
-    ])
-});
+Logger.levels = new Map([
+    [10 /* Trace */, 'trace'],
+    [20 /* Debug */, 'debug'],
+    [30 /* Info */, 'info'],
+    [40 /* Warn */, 'warn'],
+    [50 /* Error */, 'error'],
+    [60 /* Fatal */, 'error']
+]);
 //# sourceMappingURL=Logger.js.map

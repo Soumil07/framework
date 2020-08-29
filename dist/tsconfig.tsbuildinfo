@@ -552,18 +552,18 @@
         "affectsGlobalScope": false
       },
       "../src/lib/types/Enums.ts": {
-        "version": "1006ed1f8dc98e18192b1e63cbe884250b2fc4059f915b905525876b76cbe73d",
-        "signature": "2f7c82d0719477442e9793dc7a55c126219b68112aa446fa07cb80185cd943fc",
+        "version": "b7c44cab804b8e75a0604e1fa69328729636e473d98f032eac07cc28cec31322",
+        "signature": "d87dd4d779cdbf01cad7ebb43d75a799eee7fc7be2a60820ee59a219fe84e136",
         "affectsGlobalScope": false
       },
       "../src/lib/plugins/symbols.ts": {
-        "version": "4975cd2ba28718d1c23b26204146792050fca63ae840af7e4cf59b7d67b544c8",
-        "signature": "35df7a55bfad8bd44d6058274d5f5a4ca44c5ebdde9c415b51e697c7b666724e",
+        "version": "1d84c2145df0906d6439e86d59134c0ee5c33271e07a2926fdfa6f1f69ece387",
+        "signature": "f8493d80da8d2d3e8c7aad46920fa00d1b3dfe2980ca51969a3953616bc638f3",
         "affectsGlobalScope": false
       },
       "../src/lib/plugins/PluginManager.ts": {
-        "version": "cfaf6296d02254e2bcf6d88f255d7d9407dc6d68574106bd4e76fab805be56a2",
-        "signature": "97990830415e10f6ca4dadcaa606fd63f5aa356232569f9bf7ba75b91b393eeb",
+        "version": "2f87e701e76608afd72ba8ba5d59de92fcc7d0f4553d630f86a42ed53ee4518c",
+        "signature": "10ab71a9e528c6095c32a4804d7111b9c6fd7640c15ac742be3319c831d0818c",
         "affectsGlobalScope": false
       },
       "../src/lib/utils/Result.ts": {
@@ -752,13 +752,13 @@
         "affectsGlobalScope": false
       },
       "../src/lib/SapphireClient.ts": {
-        "version": "3240bb3f0e956e0e757f6023291809e064d749758f39405d7153508cbfa5e1ab",
-        "signature": "fad1b681afba0b5fc12d250d94dd650d308a2229e94430f57ff8e29ef9448911",
+        "version": "10970e68e9d5edf3aec74035b514be4e7501d9520be3145a0b2242402f008590",
+        "signature": "997bbb033c880be894f0de2abdfda08b62267d57cea097b6109df0a640b0dee6",
         "affectsGlobalScope": false
       },
       "../src/lib/plugins/Plugin.ts": {
-        "version": "3de93486e42c1aac1f7b65dd7ac220c9df084c5fb3c2bb1fba1e805e0b03bcc9",
-        "signature": "55114af22dab504c13a6d50ae42d136fed34fa6e9b29e5f2628a0d1823871cb7",
+        "version": "dfa6f258cb7a89924dc7887848fa96776b9d5b3c4981c301e7a877fc2bb0d555",
+        "signature": "04084a238d8a9ec81eaf10d8caa3fdacc75c5f411e4ac3a249fdb538b44fe91d",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
@@ -995,7 +995,7 @@
       "sourceMap": true,
       "strict": true,
       "target": 6,
-      "useDefineForClassFields": true,
+      "useDefineForClassFields": false,
       "rootDir": "../src",
       "outDir": "./",
       "composite": true,

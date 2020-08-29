@@ -3,12 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Internationalization = void 0;
 class Internationalization {
     constructor(defaultName) {
-        Object.defineProperty(this, "defaultName", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
         this.defaultName = defaultName;
     }
     resolveNameFromMessage(message) {

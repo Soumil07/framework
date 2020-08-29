@@ -121,6 +121,14 @@ export declare class SapphireClient extends Client {
     static plugins: PluginManager;
     static use(plugin: typeof Plugin): typeof SapphireClient;
 }
+export interface ClientLoggerOptions {
+    level?: LogLevel;
+    instance?: ILogger;
+}
+export interface ClientInternationalizationOptions {
+    defaultName?: string;
+    instance?: IInternationalization;
+}
 declare module 'discord.js' {
     interface Client {
         id: string | null;
@@ -136,14 +144,6 @@ declare module 'discord.js' {
         id?: string;
         logger?: ClientLoggerOptions;
         i18n?: ClientInternationalizationOptions;
-    }
-    interface ClientLoggerOptions {
-        level?: LogLevel;
-        instance?: ILogger;
-    }
-    interface ClientInternationalizationOptions {
-        defaultName?: string;
-        instance?: IInternationalization;
     }
     interface Message {
         fetchLanguage(): Awaited<string>;

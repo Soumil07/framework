@@ -5,12 +5,7 @@ require("../types/Enums");
 const symbols_1 = require("./symbols");
 class PluginManager {
     constructor() {
-        Object.defineProperty(this, "registry", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: new Set()
-        });
+        this.registry = new Set();
     }
     registerHook(hook, type, name) {
         if (typeof hook !== 'function')
@@ -18,24 +13,28 @@ class PluginManager {
         this.registry.add({ hook, type, name });
         return this;
     }
+    registerPreGenericsInitializationHook(hook, name) {
+        return this.registerHook(hook, "preGenericsInitialization" /* PreGenericsInitialization */, name);
+    }
     registerPreInitializationHook(hook, name) {
-        return this.registerHook(hook, 0 /* PreInitialization */, name);
+        return this.registerHook(hook, "preInitialization" /* PreInitialization */, name);
     }
     registerPostInitializationHook(hook, name) {
-        return this.registerHook(hook, 1 /* PostInitialization */, name);
+        return this.registerHook(hook, "postInitialization" /* PostInitialization */, name);
     }
     registerPreLoginHook(hook, name) {
-        return this.registerHook(hook, 2 /* PreLogin */, name);
+        return this.registerHook(hook, "preLogin" /* PreLogin */, name);
     }
     registerPostLoginHook(hook, name) {
-        return this.registerHook(hook, 3 /* PostLogin */, name);
+        return this.registerHook(hook, "postLogin" /* PostLogin */, name);
     }
     use(plugin) {
         const possibleSymbolHooks = [
-            [symbols_1.preInitialization, 0 /* PreInitialization */],
-            [symbols_1.postInitialization, 1 /* PostInitialization */],
-            [symbols_1.preLogin, 2 /* PreLogin */],
-            [symbols_1.postLogin, 3 /* PostLogin */]
+            [symbols_1.preGenericsInitialization, "preGenericsInitialization" /* PreGenericsInitialization */],
+            [symbols_1.preInitialization, "preInitialization" /* PreInitialization */],
+            [symbols_1.postInitialization, "postInitialization" /* PostInitialization */],
+            [symbols_1.preLogin, "preLogin" /* PreLogin */],
+            [symbols_1.postLogin, "postLogin" /* PostLogin */]
         ];
         for (const [hookSymbol, hookType] of possibleSymbolHooks) {
             const hook = Reflect.get(plugin, hookSymbol);

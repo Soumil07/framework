@@ -9,9 +9,10 @@ var CooldownLevel;
 })(CooldownLevel = exports.CooldownLevel || (exports.CooldownLevel = {}));
 var PluginHook;
 (function (PluginHook) {
-    PluginHook[PluginHook["PreInitialization"] = 0] = "PreInitialization";
-    PluginHook[PluginHook["PostInitialization"] = 1] = "PostInitialization";
-    PluginHook[PluginHook["PreLogin"] = 2] = "PreLogin";
-    PluginHook[PluginHook["PostLogin"] = 3] = "PostLogin";
+    PluginHook["PreGenericsInitialization"] = "preGenericsInitialization";
+    PluginHook["PreInitialization"] = "preInitialization";
+    PluginHook["PostInitialization"] = "postInitialization";
+    PluginHook["PreLogin"] = "preLogin";
+    PluginHook["PostLogin"] = "postLogin";
 })(PluginHook = exports.PluginHook || (exports.PluginHook = {}));
 //# sourceMappingURL=Enums.js.map

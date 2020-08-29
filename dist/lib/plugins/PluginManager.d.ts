@@ -13,6 +13,7 @@ export interface SapphirePluginHookEntry {
 export declare class PluginManager {
     readonly registry: Set<SapphirePluginHookEntry>;
     registerHook(hook: SapphirePluginHook, type: PluginHook, name?: string): this;
+    registerPreGenericsInitializationHook(hook: SapphirePluginHook, name?: string): this;
     registerPreInitializationHook(hook: SapphirePluginHook, name?: string): this;
     registerPostInitializationHook(hook: SapphirePluginHook, name?: string): this;
     registerPreLoginHook(hook: SapphirePluginHook, name?: string): this;

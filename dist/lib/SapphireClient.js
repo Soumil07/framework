@@ -24,82 +24,7 @@ class SapphireClient extends discord_js_1.Client {
          * The client's ID, used for the user prefix.
          * @since 1.0.0
          */
-        Object.defineProperty(this, "id", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: null
-        });
-        /**
-         * The logger to be used by the framework and plugins.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "logger", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The internationalization handler to be used by the framework and plugins.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "i18n", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The arguments the framework has registered.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "arguments", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The commands the framework has registered.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "commands", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The events the framework has registered.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "events", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The precondition the framework has registered.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "preconditions", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The registered stores.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "stores", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
+        this.id = null;
         /**
          * The method to be overriden by the developer.
          * @since 1.0.0
@@ -126,16 +51,14 @@ class SapphireClient extends discord_js_1.Client {
          * };
          * ```
          */
-        Object.defineProperty(this, "fetchPrefix", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: () => null
-        });
-        // The logger is created before plugins so they can use, or even, override it.
+        this.fetchPrefix = () => null;
+        for (const plugin of SapphireClient.plugins.values("preGenericsInitialization" /* PreGenericsInitialization */)) {
+            plugin.hook.call(this, options);
+            this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
+        }
         this.logger = (_b = (_a = options.logger) === null || _a === void 0 ? void 0 : _a.instance) !== null && _b !== void 0 ? _b : new Logger_1.Logger((_d = (_c = options.logger) === null || _c === void 0 ? void 0 : _c.level) !== null && _d !== void 0 ? _d : 40 /* Warn */);
         this.i18n = (_f = (_e = options.i18n) === null || _e === void 0 ? void 0 : _e.instance) !== null && _f !== void 0 ? _f : new Internationalization_1.Internationalization((_h = (_g = options.i18n) === null || _g === void 0 ? void 0 : _g.defaultName) !== null && _h !== void 0 ? _h : 'en-US');
-        for (const plugin of SapphireClient.plugins.values(0 /* PreInitialization */)) {
+        for (const plugin of SapphireClient.plugins.values("preInitialization" /* PreInitialization */)) {
             plugin.hook.call(this, options);
             this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
         }
@@ -149,7 +72,7 @@ class SapphireClient extends discord_js_1.Client {
             .registerStore(this.commands)
             .registerStore(this.events)
             .registerStore(this.preconditions);
-        for (const plugin of SapphireClient.plugins.values(1 /* PostInitialization */)) {
+        for (const plugin of SapphireClient.plugins.values("postInitialization" /* PostInitialization */)) {
             plugin.hook.call(this, options);
             this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
         }
@@ -197,13 +120,13 @@ class SapphireClient extends discord_js_1.Client {
      * @retrun Token of the account used.
      */
     async login(token) {
-        for (const plugin of SapphireClient.plugins.values(2 /* PreLogin */)) {
+        for (const plugin of SapphireClient.plugins.values("preLogin" /* PreLogin */)) {
             plugin.hook.call(this);
             this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
         }
         await Promise.all([...this.stores].map((store) => store.loadAll()));
         const login = await super.login(token);
-        for (const plugin of SapphireClient.plugins.values(3 /* PostLogin */)) {
+        for (const plugin of SapphireClient.plugins.values("postLogin" /* PostLogin */)) {
             plugin.hook.call(this);
             this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
         }
@@ -215,10 +138,5 @@ class SapphireClient extends discord_js_1.Client {
     }
 }
 exports.SapphireClient = SapphireClient;
-Object.defineProperty(SapphireClient, "plugins", {
-    enumerable: true,
-    configurable: true,
-    writable: true,
-    value: new PluginManager_1.PluginManager()
-});
+SapphireClient.plugins = new PluginManager_1.PluginManager();
 //# sourceMappingURL=SapphireClient.js.map

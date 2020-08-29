@@ -41,46 +41,6 @@ class Command extends BaseAliasPiece_1.BaseAliasPiece {
         var _a, _b, _c, _d, _e;
         super(context, { ...options, name: (name !== null && name !== void 0 ? name : context.name).toLowerCase() });
         /**
-         * A basic summary about the command
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "description", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * The preconditions to be run.
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "preconditions", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * Longer version of command's summary and how to use it
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "detailedDescription", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
-         * Accepted flags for the command
-         * @since 1.0.0
-         */
-        Object.defineProperty(this, "flags", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
-        /**
          * The lexer to be used for command parsing
          * @since 1.0.0
          * @private

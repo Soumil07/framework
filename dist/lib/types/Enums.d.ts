@@ -4,9 +4,10 @@ export declare const enum CooldownLevel {
     Guild = "guild"
 }
 export declare const enum PluginHook {
-    PreInitialization = 0,
-    PostInitialization = 1,
-    PreLogin = 2,
-    PostLogin = 3
+    PreGenericsInitialization = "preGenericsInitialization",
+    PreInitialization = "preInitialization",
+    PostInitialization = "postInitialization",
+    PreLogin = "preLogin",
+    PostLogin = "postLogin"
 }
 //# sourceMappingURL=Enums.d.ts.map
