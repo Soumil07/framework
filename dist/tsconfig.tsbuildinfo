@@ -392,8 +392,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/process.d.ts": {
-        "version": "6eaee45c02a226f96d34e0c6a7542873d0160af179bbf9ead42e05f6fc36f9e5",
-        "signature": "6eaee45c02a226f96d34e0c6a7542873d0160af179bbf9ead42e05f6fc36f9e5",
+        "version": "3b421841e978ea425f634dcef9093890a6f2c245e49164101e970acd534972a8",
+        "signature": "3b421841e978ea425f634dcef9093890a6f2c245e49164101e970acd534972a8",
         "affectsGlobalScope": true
       },
       "../node_modules/@types/node/punycode.d.ts": {
@@ -556,24 +556,24 @@
         "signature": "d87dd4d779cdbf01cad7ebb43d75a799eee7fc7be2a60820ee59a219fe84e136",
         "affectsGlobalScope": false
       },
+      "../src/lib/utils/Types.ts": {
+        "version": "ad7d0fe3149de03f744369458ba1fb5b82a9e9a6e932cf42a6b777d323474251",
+        "signature": "4c7fc34ece2baf0a1f0a818226012618c25a3f28223203048ffc920099b6dd2c",
+        "affectsGlobalScope": false
+      },
       "../src/lib/plugins/symbols.ts": {
         "version": "1d84c2145df0906d6439e86d59134c0ee5c33271e07a2926fdfa6f1f69ece387",
         "signature": "f8493d80da8d2d3e8c7aad46920fa00d1b3dfe2980ca51969a3953616bc638f3",
         "affectsGlobalScope": false
       },
       "../src/lib/plugins/PluginManager.ts": {
-        "version": "2f87e701e76608afd72ba8ba5d59de92fcc7d0f4553d630f86a42ed53ee4518c",
-        "signature": "10ab71a9e528c6095c32a4804d7111b9c6fd7640c15ac742be3319c831d0818c",
+        "version": "0713ee186dd9b1ef9f84a9e9f43169868e6bb697db97db25a89960b45e44a4f5",
+        "signature": "6b9a7239e299f5d57735f505768d3761ff3b25fb0f07ce9fb9d9a69e85d30fa7",
         "affectsGlobalScope": false
       },
       "../src/lib/utils/Result.ts": {
         "version": "99e926ccded90fe12f87553da2e59f58f78d0c6e9cad096adbedc08cce997feb",
         "signature": "b306300a497dc4c323d0fc7b3eae3692bea87fb85a640c1f3ef594d999206779",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/utils/Types.ts": {
-        "version": "ad7d0fe3149de03f744369458ba1fb5b82a9e9a6e932cf42a6b777d323474251",
-        "signature": "4c7fc34ece2baf0a1f0a818226012618c25a3f28223203048ffc920099b6dd2c",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/base/BasePiece.ts": {
@@ -752,13 +752,13 @@
         "affectsGlobalScope": false
       },
       "../src/lib/SapphireClient.ts": {
-        "version": "10970e68e9d5edf3aec74035b514be4e7501d9520be3145a0b2242402f008590",
+        "version": "be12c0b3355802e9a5f5ff0942491a73d4a02acebcdbcaf0201a0dd7b181bba2",
         "signature": "997bbb033c880be894f0de2abdfda08b62267d57cea097b6109df0a640b0dee6",
         "affectsGlobalScope": false
       },
       "../src/lib/plugins/Plugin.ts": {
-        "version": "dfa6f258cb7a89924dc7887848fa96776b9d5b3c4981c301e7a877fc2bb0d555",
-        "signature": "04084a238d8a9ec81eaf10d8caa3fdacc75c5f411e4ac3a249fdb538b44fe91d",
+        "version": "71bdc9d532967b017006b59daf02e25a8ac4a78e1b824f860aa929ad1d31fac3",
+        "signature": "ed7627677f086c977409f612133d4b39d17a3c7bbc52846ea5a27c12f88b0a86",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
@@ -2730,7 +2730,8 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/SapphireClient.ts",
-        "../src/lib/plugins/symbols.ts"
+        "../src/lib/plugins/symbols.ts",
+        "../src/lib/utils/Types.ts"
       ],
       "../src/lib/plugins/PluginManager.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -2744,7 +2745,8 @@
         "../src/lib/SapphireClient.ts",
         "../src/lib/plugins/Plugin.ts",
         "../src/lib/plugins/symbols.ts",
-        "../src/lib/types/Enums.ts"
+        "../src/lib/types/Enums.ts",
+        "../src/lib/utils/Types.ts"
       ],
       "../src/lib/plugins/symbols.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -4758,13 +4760,15 @@
       "../src/lib/plugins/Plugin.ts": [
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/SapphireClient.ts",
-        "../src/lib/plugins/symbols.ts"
+        "../src/lib/plugins/symbols.ts",
+        "../src/lib/utils/Types.ts"
       ],
       "../src/lib/plugins/PluginManager.ts": [
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/SapphireClient.ts",
         "../src/lib/plugins/Plugin.ts",
-        "../src/lib/types/Enums.ts"
+        "../src/lib/types/Enums.ts",
+        "../src/lib/utils/Types.ts"
       ],
       "../src/lib/structures/Argument.ts": [
         "../node_modules/discord.js/typings/index.d.ts",

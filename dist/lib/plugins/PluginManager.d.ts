@@ -1,24 +1,33 @@
 import type { ClientOptions } from 'discord.js';
 import type { SapphireClient } from '../SapphireClient';
 import { PluginHook } from '../types/Enums';
+import type { Awaited } from '../utils/Types';
 import type { Plugin } from './Plugin';
-export interface SapphirePluginHook {
-    (this: SapphireClient, options?: ClientOptions): unknown;
+export declare type AsyncPluginHooks = PluginHook.PreLogin | PluginHook.PostLogin;
+export interface SapphirePluginAsyncHook {
+    (this: SapphireClient, options: ClientOptions): Awaited<unknown>;
 }
-export interface SapphirePluginHookEntry {
-    hook: SapphirePluginHook;
+export declare type SyncPluginHooks = Exclude<PluginHook, AsyncPluginHooks>;
+export interface SapphirePluginHook {
+    (this: SapphireClient, options: ClientOptions): unknown;
+}
+export interface SapphirePluginHookEntry<T = SapphirePluginHook | SapphirePluginAsyncHook> {
+    hook: T;
     type: PluginHook;
     name?: string;
 }
 export declare class PluginManager {
-    readonly registry: Set<SapphirePluginHookEntry>;
-    registerHook(hook: SapphirePluginHook, type: PluginHook, name?: string): this;
+    readonly registry: Set<SapphirePluginHookEntry<SapphirePluginAsyncHook | SapphirePluginHook>>;
+    registerHook(hook: SapphirePluginHook, type: SyncPluginHooks, name?: string): this;
+    registerHook(hook: SapphirePluginAsyncHook, type: AsyncPluginHooks, name?: string): this;
     registerPreGenericsInitializationHook(hook: SapphirePluginHook, name?: string): this;
     registerPreInitializationHook(hook: SapphirePluginHook, name?: string): this;
     registerPostInitializationHook(hook: SapphirePluginHook, name?: string): this;
-    registerPreLoginHook(hook: SapphirePluginHook, name?: string): this;
-    registerPostLoginHook(hook: SapphirePluginHook, name?: string): this;
+    registerPreLoginHook(hook: SapphirePluginAsyncHook, name?: string): this;
+    registerPostLoginHook(hook: SapphirePluginAsyncHook, name?: string): this;
     use(plugin: typeof Plugin): this;
-    values(hook?: PluginHook): Generator<SapphirePluginHookEntry, void, unknown>;
+    values(): Generator<SapphirePluginHookEntry, void, unknown>;
+    values(hook: SyncPluginHooks): Generator<SapphirePluginHookEntry<SapphirePluginHook>, void, unknown>;
+    values(hook: AsyncPluginHooks): Generator<SapphirePluginHookEntry<SapphirePluginAsyncHook>, void, unknown>;
 }
 //# sourceMappingURL=PluginManager.d.ts.map

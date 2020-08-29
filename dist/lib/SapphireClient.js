@@ -121,13 +121,13 @@ class SapphireClient extends discord_js_1.Client {
      */
     async login(token) {
         for (const plugin of SapphireClient.plugins.values("preLogin" /* PreLogin */)) {
-            plugin.hook.call(this);
+            await plugin.hook.call(this, this.options);
             this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
         }
         await Promise.all([...this.stores].map((store) => store.loadAll()));
         const login = await super.login(token);
         for (const plugin of SapphireClient.plugins.values("postLogin" /* PostLogin */)) {
-            plugin.hook.call(this);
+            await plugin.hook.call(this, this.options);
             this.emit(Events_1.Events.PluginLoaded, plugin.type, plugin.name);
         }
         return login;
