@@ -802,7 +802,7 @@
         "affectsGlobalScope": false
       },
       "../src/preconditions/DMOnly.ts": {
-        "version": "36287db3dfa824c32f35f1d476f3c11d4cbb5e52a19e9d230726f18d8822e91a",
+        "version": "957a17596f86ce0f0b95309ea309f9dd1efff1659503557c8058ae466a1f644d",
         "signature": "95905779f1e95602da03eab4b95f0aa16c3a580cf139180a0c37464611432592",
         "affectsGlobalScope": false
       },
@@ -812,7 +812,7 @@
         "affectsGlobalScope": false
       },
       "../src/preconditions/NSFW.ts": {
-        "version": "bd2d25f6a3e7e03d9cc4c2522adb927abd8889908288eebf5faf06763b02a232",
+        "version": "8c397a301acc821a461a53e7cd9d2479ece931c8ff8c78e462ba8f221ecef2bd",
         "signature": "0298d602e145fb3fe6ff7ee2f2a6f9e574fc8ec9f9f87d3412203b75eaceb102",
         "affectsGlobalScope": false
       },
