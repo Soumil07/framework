@@ -812,7 +812,7 @@
         "affectsGlobalScope": false
       },
       "../src/preconditions/NSFW.ts": {
-        "version": "b7dd47e828fddbf531ebdd2190d9833c48cd750ea07138c03e421ec2c6935e70",
+        "version": "bd2d25f6a3e7e03d9cc4c2522adb927abd8889908288eebf5faf06763b02a232",
         "signature": "0298d602e145fb3fe6ff7ee2f2a6f9e574fc8ec9f9f87d3412203b75eaceb102",
         "affectsGlobalScope": false
       },
