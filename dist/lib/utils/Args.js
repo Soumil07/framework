@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Args = void 0;
+const ArgumentError_1 = require("../errors/ArgumentError");
 const UserError_1 = require("../errors/UserError");
 const Result_1 = require("./Result");
 /**
@@ -128,8 +129,12 @@ class Args {
      * Converts a callback into an usable argument.
      * @param cb The callback to convert into an [[IArgument]].
      */
-    static make(cb) {
-        return { run: cb };
+    static make(cb, name = '') {
+        return { run: cb, name };
+    }
+    static error(argument, parameter, typeOrMessage, rawMessage) {
+        const [type, message] = typeof rawMessage === 'undefined' ? [argument.name, typeOrMessage] : [typeOrMessage, rawMessage];
+        return new ArgumentError_1.ArgumentError(argument, parameter, type, message);
     }
 }
 exports.Args = Args;

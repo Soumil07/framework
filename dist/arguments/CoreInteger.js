@@ -1,9 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CoreArgument = void 0;
-const UserError_1 = require("../lib/errors/UserError");
 const Argument_1 = require("../lib/structures/Argument");
-const Result_1 = require("../lib/utils/Result");
 class CoreArgument extends Argument_1.Argument {
     constructor(context) {
         super(context, { name: 'integer' });
@@ -11,15 +9,15 @@ class CoreArgument extends Argument_1.Argument {
     run(argument, context) {
         const parsed = Number(argument);
         if (!Number.isInteger(parsed)) {
-            return Result_1.err(new UserError_1.UserError('ArgumentIntegerInvalidNumber', 'The argument did not resolve to an integer.'));
+            return this.error(argument, 'ArgumentIntegerInvalidNumber', 'The argument did not resolve to an integer.');
         }
         if (typeof context.minimum === 'number' && parsed < context.minimum) {
-            return Result_1.err(new UserError_1.UserError('ArgumentIntegerTooSmall', 'The argument is too small.'));
+            return this.error(argument, 'ArgumentIntegerTooSmall', 'The argument is too small.');
         }
         if (typeof context.maximum === 'number' && parsed > context.maximum) {
-            return Result_1.err(new UserError_1.UserError('ArgumentIntegerTooBig', 'The argument is too big.'));
+            return this.error(argument, 'ArgumentIntegerTooBig', 'The argument is too big.');
         }
-        return Result_1.ok(parsed);
+        return this.ok(parsed);
     }
 }
 exports.CoreArgument = CoreArgument;

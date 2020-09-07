@@ -14,6 +14,7 @@ exports.MissingExportsError = exports.LoaderError = void 0;
 var pieces_1 = require("@sapphire/pieces");
 Object.defineProperty(exports, "LoaderError", { enumerable: true, get: function () { return pieces_1.LoaderError; } });
 Object.defineProperty(exports, "MissingExportsError", { enumerable: true, get: function () { return pieces_1.MissingExportsError; } });
+__exportStar(require("./lib/errors/ArgumentError"), exports);
 __exportStar(require("./lib/errors/UserError"), exports);
 __exportStar(require("./lib/extensions/SapphireMessage"), exports);
 __exportStar(require("./lib/plugins/Plugin"), exports);

@@ -271,11 +271,6 @@
         "signature": "47b9e7168286487757f5d7a016cd669080201bcc054e8a7b9402fbaf250f68eb",
         "affectsGlobalScope": false
       },
-      "../src/lib/errors/UserError.ts": {
-        "version": "a69bd2ca6538028a1b3df185c3d8bd5048598d09af21511a3c7eb64ba1cbaa4f",
-        "signature": "f4a595bdb04795ac41465d07f48bbe77f74bb83e9983568f1a93b8587662d32f",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/node/ts3.1/globals.d.ts": {
         "version": "6fc83519155969f2457d2454908d68830a6f6480974914c024eaf4e3248a2fd1",
         "signature": "6fc83519155969f2457d2454908d68830a6f6480974914c024eaf4e3248a2fd1",
@@ -546,39 +541,9 @@
         "signature": "453abbd598aa3aeac131ddad5e17dcf7aa29c38dd3da1aaad47adb619900896a",
         "affectsGlobalScope": true
       },
-      "../src/lib/extensions/SapphireMessage.ts": {
-        "version": "add7e804376a7c82210bbe85864ba98d2d30c328abd797bec5dee1d83251e93b",
-        "signature": "231bcf1f06521c5e9669c3f26aa4820dc4efc8cb89533a18abafb470570c34a0",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/types/Enums.ts": {
-        "version": "b7c44cab804b8e75a0604e1fa69328729636e473d98f032eac07cc28cec31322",
-        "signature": "d87dd4d779cdbf01cad7ebb43d75a799eee7fc7be2a60820ee59a219fe84e136",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/utils/Types.ts": {
-        "version": "ad7d0fe3149de03f744369458ba1fb5b82a9e9a6e932cf42a6b777d323474251",
-        "signature": "4c7fc34ece2baf0a1f0a818226012618c25a3f28223203048ffc920099b6dd2c",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/plugins/symbols.ts": {
-        "version": "1d84c2145df0906d6439e86d59134c0ee5c33271e07a2926fdfa6f1f69ece387",
-        "signature": "f8493d80da8d2d3e8c7aad46920fa00d1b3dfe2980ca51969a3953616bc638f3",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/plugins/PluginManager.ts": {
-        "version": "0713ee186dd9b1ef9f84a9e9f43169868e6bb697db97db25a89960b45e44a4f5",
-        "signature": "6b9a7239e299f5d57735f505768d3761ff3b25fb0f07ce9fb9d9a69e85d30fa7",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/utils/Result.ts": {
-        "version": "99e926ccded90fe12f87553da2e59f58f78d0c6e9cad096adbedc08cce997feb",
-        "signature": "b306300a497dc4c323d0fc7b3eae3692bea87fb85a640c1f3ef594d999206779",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/structures/base/BasePiece.ts": {
-        "version": "e411af0747c31de23280793daa838b64b6b0203c151c3a5680c2d6d64adc97f0",
-        "signature": "9da6585c06d43fd162fe27cbbc51d77f31315d4dc4ebe8560a6f1b0d102522ff",
+      "../src/lib/errors/UserError.ts": {
+        "version": "a69bd2ca6538028a1b3df185c3d8bd5048598d09af21511a3c7eb64ba1cbaa4f",
+        "signature": "f4a595bdb04795ac41465d07f48bbe77f74bb83e9983568f1a93b8587662d32f",
         "affectsGlobalScope": false
       },
       "../node_modules/lexure/dist/types/tokens.d.ts": {
@@ -641,14 +606,24 @@
         "signature": "4a1c4bd7d4b874418c8958e8c4f9ff1ba4cae77748897260fa2263d8d94f06aa",
         "affectsGlobalScope": false
       },
-      "../src/lib/utils/Args.ts": {
-        "version": "8fb0c5e91c5ba2113dd0258a4fc181a1d1310f43fbb347a2c114a13c6a182ea6",
-        "signature": "cad87b4e5b14b8853b7cd6ebd2341eb3459e128564b4999e3654f4f259ae203c",
+      "../src/lib/utils/Result.ts": {
+        "version": "99e926ccded90fe12f87553da2e59f58f78d0c6e9cad096adbedc08cce997feb",
+        "signature": "b306300a497dc4c323d0fc7b3eae3692bea87fb85a640c1f3ef594d999206779",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/utils/Types.ts": {
+        "version": "ad7d0fe3149de03f744369458ba1fb5b82a9e9a6e932cf42a6b777d323474251",
+        "signature": "4c7fc34ece2baf0a1f0a818226012618c25a3f28223203048ffc920099b6dd2c",
         "affectsGlobalScope": false
       },
       "../src/lib/utils/preconditions/IPreconditionContainer.ts": {
         "version": "c80deb6ff15269aee764794e60c5326ec805fee6e59d403261592d1c80f4992e",
         "signature": "adf1879aba03b5e2b47a48fd60baeebad802f86ae5685446f26b6376230559cd",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/structures/base/BasePiece.ts": {
+        "version": "e411af0747c31de23280793daa838b64b6b0203c151c3a5680c2d6d64adc97f0",
+        "signature": "9da6585c06d43fd162fe27cbbc51d77f31315d4dc4ebe8560a6f1b0d102522ff",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/Precondition.ts": {
@@ -681,9 +656,39 @@
         "signature": "0b2ee35fbfe2123412cbdafcf1846b7c1107d2907cda41dff0f7719ef5774be7",
         "affectsGlobalScope": false
       },
+      "../src/lib/utils/Args.ts": {
+        "version": "161c56e31f174f0599176444e03bc939228737bc9815942b8ad3f9f5b5fabd34",
+        "signature": "283e78098613d458ffb5f46f628d587b1b9c137701864b01df3bb45101e61e27",
+        "affectsGlobalScope": false
+      },
       "../src/lib/structures/Argument.ts": {
-        "version": "77c50abdc27e3eb8543ebbdb183232ac53fd124c557d567349a83389e5328acd",
-        "signature": "9af2df7cf543dc6c1df29c08912b45399ce8973a9858507bde3b0c6c4194344f",
+        "version": "497c89cc9a8976ce7511ef0b0c57b1fa24e3d59f030bc67ede17a213a3bb1258",
+        "signature": "7d19e3fae757403dcedefa11cfa9b811a0f56b3ef197f419a9eadac56f6a2cdb",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/errors/ArgumentError.ts": {
+        "version": "cef0136a3b0b9a824ccaa91801c94e95ca411a23d179a5de1b7a452af8b87dd0",
+        "signature": "4305e737f5b36173abdb2d12f5a1e397f43d39a995a7a72f8c842e9e7febe460",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/extensions/SapphireMessage.ts": {
+        "version": "add7e804376a7c82210bbe85864ba98d2d30c328abd797bec5dee1d83251e93b",
+        "signature": "231bcf1f06521c5e9669c3f26aa4820dc4efc8cb89533a18abafb470570c34a0",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/types/Enums.ts": {
+        "version": "b7c44cab804b8e75a0604e1fa69328729636e473d98f032eac07cc28cec31322",
+        "signature": "d87dd4d779cdbf01cad7ebb43d75a799eee7fc7be2a60820ee59a219fe84e136",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/plugins/symbols.ts": {
+        "version": "1d84c2145df0906d6439e86d59134c0ee5c33271e07a2926fdfa6f1f69ece387",
+        "signature": "f8493d80da8d2d3e8c7aad46920fa00d1b3dfe2980ca51969a3953616bc638f3",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/plugins/PluginManager.ts": {
+        "version": "0713ee186dd9b1ef9f84a9e9f43169868e6bb697db97db25a89960b45e44a4f5",
+        "signature": "6b9a7239e299f5d57735f505768d3761ff3b25fb0f07ce9fb9d9a69e85d30fa7",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/Event.ts": {
@@ -762,18 +767,18 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "632196031c1be9f90c4b13bb787b42635b0bab656be406d63ae81dcf5c5b5f73",
-        "signature": "e53494104337b7f33926cd0fb351c5bef3ef5555c2b305ce305a87799ffba428",
+        "version": "d7df6cc1703fb48588503e644aa8eab10d5983310ae14d74fcc6d0f19b276fe8",
+        "signature": "781dca30ddaff80564aa0ab58fc73eca7957bdb5698c4d3a9bda7b913be7de43",
         "affectsGlobalScope": false
       },
       "../src/arguments/CoreInteger.ts": {
-        "version": "5a5fe112203cb3c94337bb4835feea0239966fefd92bb058ca6d40c4da56dc4c",
-        "signature": "606cec43133edfd7a388661970bd8cdf88a9ae6fa0af3565d352401e7d0ce700",
+        "version": "e997f98f5cc09cbdda7cadfec942f37d9e51ff873468e339a2846eda4499c6a2",
+        "signature": "a161dcf9d2f038e4955279881f6a9d09f3c5e86d5df82aff7a200b87a78e5323",
         "affectsGlobalScope": false
       },
       "../src/arguments/CoreString.ts": {
-        "version": "272394ab7336c55186e073d7ae7cabc15b138678a8a82a2b1913e071cb6515d8",
-        "signature": "358af66c337a96b47519fbb56a7f31588ca56e9ff61fcdc472da49852780b0b7",
+        "version": "b4a650af57adb4e70e577fa7563bea825bca1e618d1bf95718953af759ddc5ae",
+        "signature": "ffc027e5affe9eee48c01ad2425d7d5fed0e138df5ee7880f2452474cab46f89",
         "affectsGlobalScope": false
       },
       "../src/events/CoreReady.ts": {
@@ -2532,10 +2537,7 @@
         "../node_modules/@types/node/ts3.4/fs.d.ts",
         "../node_modules/@types/node/ts3.4/process.d.ts",
         "../node_modules/@types/node/ts3.4/util.d.ts",
-        "../src/lib/errors/UserError.ts",
-        "../src/lib/structures/Argument.ts",
-        "../src/lib/utils/Result.ts",
-        "../src/lib/utils/Types.ts"
+        "../src/lib/structures/Argument.ts"
       ],
       "../src/arguments/CoreString.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
@@ -2546,10 +2548,7 @@
         "../node_modules/@types/node/ts3.4/fs.d.ts",
         "../node_modules/@types/node/ts3.4/process.d.ts",
         "../node_modules/@types/node/ts3.4/util.d.ts",
-        "../src/lib/errors/UserError.ts",
-        "../src/lib/structures/Argument.ts",
-        "../src/lib/utils/Result.ts",
-        "../src/lib/utils/Types.ts"
+        "../src/lib/structures/Argument.ts"
       ],
       "../src/events/CoreReady.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
@@ -2628,6 +2627,7 @@
         "../node_modules/@types/node/ts3.4/process.d.ts",
         "../node_modules/@types/node/ts3.4/util.d.ts",
         "../src/lib/SapphireClient.ts",
+        "../src/lib/errors/ArgumentError.ts",
         "../src/lib/errors/UserError.ts",
         "../src/lib/extensions/SapphireMessage.ts",
         "../src/lib/plugins/Plugin.ts",
@@ -2685,6 +2685,17 @@
         "../src/lib/utils/i18n/Internationalization.ts",
         "../src/lib/utils/logger/ILogger.ts",
         "../src/lib/utils/logger/Logger.ts"
+      ],
+      "../src/lib/errors/ArgumentError.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../src/lib/errors/UserError.ts",
+        "../src/lib/structures/Argument.ts"
       ],
       "../src/lib/errors/UserError.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -2755,6 +2766,7 @@
         "../src/lib/errors/UserError.ts",
         "../src/lib/structures/Command.ts",
         "../src/lib/structures/base/BasePiece.ts",
+        "../src/lib/utils/Args.ts",
         "../src/lib/utils/Result.ts",
         "../src/lib/utils/Types.ts"
       ],
@@ -2935,6 +2947,7 @@
         "../node_modules/@types/node/ts3.4/util.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/lexure/dist/types/index.d.ts",
+        "../src/lib/errors/ArgumentError.ts",
         "../src/lib/errors/UserError.ts",
         "../src/lib/structures/Argument.ts",
         "../src/lib/structures/Command.ts",
@@ -4639,17 +4652,11 @@
       ],
       "../src/arguments/CoreInteger.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
-        "../src/lib/errors/UserError.ts",
-        "../src/lib/structures/Argument.ts",
-        "../src/lib/utils/Result.ts",
-        "../src/lib/utils/Types.ts"
+        "../src/lib/structures/Argument.ts"
       ],
       "../src/arguments/CoreString.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
-        "../src/lib/errors/UserError.ts",
-        "../src/lib/structures/Argument.ts",
-        "../src/lib/utils/Result.ts",
-        "../src/lib/utils/Types.ts"
+        "../src/lib/structures/Argument.ts"
       ],
       "../src/events/CoreReady.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
@@ -4685,6 +4692,7 @@
       "../src/index.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../src/lib/SapphireClient.ts",
+        "../src/lib/errors/ArgumentError.ts",
         "../src/lib/errors/UserError.ts",
         "../src/lib/extensions/SapphireMessage.ts",
         "../src/lib/plugins/Plugin.ts",
@@ -4729,6 +4737,10 @@
         "../src/lib/utils/Types.ts",
         "../src/lib/utils/i18n/IInternationalization.ts",
         "../src/lib/utils/logger/ILogger.ts"
+      ],
+      "../src/lib/errors/ArgumentError.ts": [
+        "../src/lib/errors/UserError.ts",
+        "../src/lib/structures/Argument.ts"
       ],
       "../src/lib/extensions/SapphireMessage.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
@@ -4827,6 +4839,7 @@
       "../src/lib/utils/Args.ts": [
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/lexure/dist/types/index.d.ts",
+        "../src/lib/errors/ArgumentError.ts",
         "../src/lib/errors/UserError.ts",
         "../src/lib/structures/Argument.ts",
         "../src/lib/structures/Command.ts",
@@ -5057,6 +5070,7 @@
       "../src/events/command-handler/CorePrefixedMessage.ts",
       "../src/index.ts",
       "../src/lib/SapphireClient.ts",
+      "../src/lib/errors/ArgumentError.ts",
       "../src/lib/errors/UserError.ts",
       "../src/lib/extensions/SapphireMessage.ts",
       "../src/lib/plugins/Plugin.ts",

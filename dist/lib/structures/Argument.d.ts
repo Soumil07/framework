@@ -1,14 +1,30 @@
 import type { Message } from 'discord.js';
 import type { UserError } from '../errors/UserError';
-import type { Result } from '../utils/Result';
+import { Result } from '../utils/Result';
 import type { Awaited } from '../utils/Types';
 import { BasePiece } from './base/BasePiece';
 import type { Command } from './Command';
+export declare type ArgumentResult<T> = Awaited<Result<T, UserError>>;
 export interface IArgument<T> {
-    run(argument: string, context: ArgumentContext): Awaited<Result<T, UserError>>;
+    readonly name: string;
+    run(argument: string, context: ArgumentContext): ArgumentResult<T>;
 }
 export declare abstract class Argument<T = unknown> extends BasePiece implements IArgument<T> {
-    abstract run(argument: string, context: ArgumentContext): Awaited<Result<T, UserError>>;
+    abstract run(argument: string, context: ArgumentContext): ArgumentResult<T>;
+    ok(value: T): ArgumentResult<T>;
+    /**
+     * Constructs an [[ArgumentError]] with [[ArgumentError#type]] set to the [[IArgument<T>#name]].
+     * @param parameter The parameter that triggered the argument.
+     * @param message The description message for the rejection.
+     */
+    error(parameter: string, message: string): ArgumentResult<T>;
+    /**
+     * Constructs an [[ArgumentError]] with a custom type.
+     * @param parameter The parameter that triggered the argument.
+     * @param type The identifier for the error.
+     * @param message The description message for the rejection.
+     */
+    error(parameter: string, type: string, message: string): ArgumentResult<T>;
 }
 export interface ArgumentContext extends Record<PropertyKey, unknown> {
     message: Message;
