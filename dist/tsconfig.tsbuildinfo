@@ -646,19 +646,24 @@
         "signature": "ea38c7463357f422fa160ba05de67a4e36fecc0bfa7a3ea279255d3f9696f43c",
         "affectsGlobalScope": false
       },
+      "../src/lib/utils/strategies/FlagUnorderedStrategy.ts": {
+        "version": "7748469d38fc70d6111c89b760d86d078afd28cd64679cff1dcc6737af9b4a81",
+        "signature": "8e65131158ef80ddc615a4ba7ec3737a4fbbda0821a5a7295d4766d473ede976",
+        "affectsGlobalScope": false
+      },
       "../src/lib/structures/base/BaseAliasPiece.ts": {
         "version": "f301c69081e7bacefe4bb0bed5324eaa1e8cce4ff38eaba37fc1b7a1eeba701b",
         "signature": "c3f5f16be5709bb33291f8cb789128370f6922c7fda33001513c6f6ea9f8db33",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/Command.ts": {
-        "version": "55e7a8ae65e6c3d983cbe92942c0bae66545f85ecf3c6fdbf8adcab36e77391c",
-        "signature": "0b2ee35fbfe2123412cbdafcf1846b7c1107d2907cda41dff0f7719ef5774be7",
+        "version": "1d0c5323fb7b96219ed6e44132b52bdf86edb4ec098ac14c36d884794e680ba7",
+        "signature": "8615277bedf51ae22f3419effd6c53764ae4a3ec6e37c735f38e7f79073a1be5",
         "affectsGlobalScope": false
       },
       "../src/lib/utils/Args.ts": {
-        "version": "161c56e31f174f0599176444e03bc939228737bc9815942b8ad3f9f5b5fabd34",
-        "signature": "283e78098613d458ffb5f46f628d587b1b9c137701864b01df3bb45101e61e27",
+        "version": "5e51282f1744f3e68c40ad62673ce3f1b75da6c1aa34d03b383df4d99a9170dd",
+        "signature": "9b0dc28327bfe99872ad5b5e494c9e59189b6dd14523a3c9995c5650c6a5b2e2",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/Argument.ts": {
@@ -2798,7 +2803,8 @@
         "../src/lib/utils/Args.ts",
         "../src/lib/utils/Types.ts",
         "../src/lib/utils/preconditions/PreconditionContainer.ts",
-        "../src/lib/utils/preconditions/PreconditionContainerAny.ts"
+        "../src/lib/utils/preconditions/PreconditionContainerAny.ts",
+        "../src/lib/utils/strategies/FlagUnorderedStrategy.ts"
       ],
       "../src/lib/structures/CommandStore.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -3079,6 +3085,16 @@
         "../src/lib/structures/Command.ts",
         "../src/lib/structures/Precondition.ts",
         "../src/lib/utils/preconditions/IPreconditionContainer.ts"
+      ],
+      "../src/lib/utils/strategies/FlagUnorderedStrategy.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/lexure/dist/types/index.d.ts"
       ],
       "../src/preconditions/DMOnly.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -4776,11 +4792,13 @@
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../node_modules/@sapphire/pieces/dist/lib/Piece.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
+        "../node_modules/lexure/dist/types/index.d.ts",
         "../src/lib/structures/base/BaseAliasPiece.ts",
         "../src/lib/utils/Args.ts",
         "../src/lib/utils/Types.ts",
         "../src/lib/utils/preconditions/PreconditionContainer.ts",
-        "../src/lib/utils/preconditions/PreconditionContainerAny.ts"
+        "../src/lib/utils/preconditions/PreconditionContainerAny.ts",
+        "../src/lib/utils/strategies/FlagUnorderedStrategy.ts"
       ],
       "../src/lib/structures/CommandStore.ts": [
         "../node_modules/discord.js/typings/index.d.ts",
@@ -4888,6 +4906,9 @@
         "../src/lib/utils/Result.ts",
         "../src/lib/utils/Types.ts",
         "../src/lib/utils/preconditions/IPreconditionContainer.ts"
+      ],
+      "../src/lib/utils/strategies/FlagUnorderedStrategy.ts": [
+        "../node_modules/lexure/dist/types/index.d.ts"
       ],
       "../src/preconditions/DMOnly.ts": [
         "../node_modules/discord.js/typings/index.d.ts",
@@ -5102,6 +5123,7 @@
       "../src/lib/utils/preconditions/PreconditionContainer.ts",
       "../src/lib/utils/preconditions/PreconditionContainerAny.ts",
       "../src/lib/utils/preconditions/PreconditionContainerSimple.ts",
+      "../src/lib/utils/strategies/FlagUnorderedStrategy.ts",
       "../src/preconditions/DMOnly.ts",
       "../src/preconditions/GuildOnly.ts",
       "../src/preconditions/NSFW.ts"

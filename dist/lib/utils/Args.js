@@ -102,6 +102,63 @@ class Args {
         throw result.error;
     }
     /**
+     * Checks if one or more flag were given.
+     * @param keys The name(s) of the flag.
+     * @example
+     * ```ts
+     * // Suppose args are from '--f --g'.
+     * console.log(args.getFlags('f'));
+     * >>> true
+     *
+     * console.log(args.getFlags('g', 'h'));
+     * >>> true
+     *
+     * console.log(args.getFlags('h'));
+     * >>> false
+     * ```
+     */
+    getFlags(...keys) {
+        return this.parser.flag(...keys);
+    }
+    /**
+     * Gets the last value of one or more options.
+     * @param keys The name(s) of the option.
+     * @example
+     * ```ts
+     * // Suppose args are from '--a=1 --b=2 --c=3'.
+     * console.log(args.getOption('a'));
+     * >>> '1'
+     *
+     * console.log(args.getOption('b', 'c'));
+     * >>> '2'
+     *
+     * console.log(args.getOption('d'));
+     * >>> null
+     * ```
+     */
+    getOption(...keys) {
+        return this.parser.option(...keys);
+    }
+    /**
+     * Gets all the values of one or more option.
+     * @param keys The name(s) of the option.
+     * @example
+     * ```ts
+     * // Suppose args are from '--a=1 --a=1 --b=2 --c=3'.
+     * console.log(args.getOptions('a'));
+     * >>> ['1', '1']
+     *
+     * console.log(args.getOptions('b', 'c'));
+     * >>> ['2', '3']
+     *
+     * console.log(args.getOptions('d'));
+     * >>> null
+     * ```
+     */
+    getOptions(...keys) {
+        return this.parser.options(...keys);
+    }
+    /**
      * Saves the current state into the stack following a FILO strategy (first-in, last-out).
      * @seealso [[Args.restore]]
      */

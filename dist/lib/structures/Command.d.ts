@@ -1,9 +1,11 @@
 import type { AliasPieceOptions } from '@sapphire/pieces';
 import type { PieceContext } from '@sapphire/pieces/dist/lib/Piece';
 import type { Message } from 'discord.js';
+import * as Lexure from 'lexure';
 import { Args } from '../utils/Args';
 import { PreconditionContainerAll } from '../utils/preconditions/PreconditionContainer';
 import type { PreconditionContainerResolvable } from '../utils/preconditions/PreconditionContainerAny';
+import { FlagStrategyOptions } from '../utils/strategies/FlagUnorderedStrategy';
 import type { Awaited } from '../utils/Types';
 import { BaseAliasPiece } from './base/BaseAliasPiece';
 export declare abstract class Command<T = Args> extends BaseAliasPiece {
@@ -24,10 +26,10 @@ export declare abstract class Command<T = Args> extends BaseAliasPiece {
      */
     detailedDescription: string;
     /**
-     * Accepted flags for the command
+     * The strategy to use for the lexer.
      * @since 1.0.0
      */
-    flags: string[];
+    strategy: Lexure.UnorderedStrategy;
     /**
      * @since 1.0.0
      * @param context The context.
@@ -75,11 +77,11 @@ export interface CommandOptions extends AliasPieceOptions {
      */
     preconditions?: PreconditionContainerResolvable;
     /**
-     * The accepted flags by the command.
+     * The options for the lexer strategy.
      * @since 1.0.0
-     * @default []
+     * @default {}
      */
-    flags?: string[];
+    strategyOptions?: FlagStrategyOptions;
     /**
      * The quotes accepted by this command, pass `[]` to disable them.
      * @since 1.0.0

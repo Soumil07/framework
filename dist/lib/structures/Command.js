@@ -30,6 +30,7 @@ exports.Command = void 0;
 const Lexure = __importStar(require("lexure"));
 const Args_1 = require("../utils/Args");
 const PreconditionContainer_1 = require("../utils/preconditions/PreconditionContainer");
+const FlagUnorderedStrategy_1 = require("../utils/strategies/FlagUnorderedStrategy");
 const BaseAliasPiece_1 = require("./base/BaseAliasPiece");
 class Command extends BaseAliasPiece_1.BaseAliasPiece {
     /**
@@ -50,7 +51,7 @@ class Command extends BaseAliasPiece_1.BaseAliasPiece {
         this.description = (_a = options.description) !== null && _a !== void 0 ? _a : '';
         this.detailedDescription = (_b = options.detailedDescription) !== null && _b !== void 0 ? _b : '';
         this.preconditions = new PreconditionContainer_1.PreconditionContainerAll(this.client, (_c = options.preconditions) !== null && _c !== void 0 ? _c : []);
-        this.flags = (_d = options.flags) !== null && _d !== void 0 ? _d : [];
+        this.strategy = new FlagUnorderedStrategy_1.FlagUnorderedStrategy((_d = options.strategyOptions) !== null && _d !== void 0 ? _d : {});
         __classPrivateFieldGet(this, _lexer).setQuotes((_e = options.quotes) !== null && _e !== void 0 ? _e : [
             ['"', '"'],
             ['“', '”'],
@@ -63,7 +64,7 @@ class Command extends BaseAliasPiece_1.BaseAliasPiece {
      * @param parameters The raw parameters as a single string.
      */
     preParse(message, parameters) {
-        const parser = new Lexure.Parser(__classPrivateFieldGet(this, _lexer).setInput(parameters).lex());
+        const parser = new Lexure.Parser(__classPrivateFieldGet(this, _lexer).setInput(parameters).lex()).setUnorderedStrategy(this.strategy);
         const args = new Lexure.Args(parser.parse());
         return new Args_1.Args(message, this, args);
     }
@@ -75,7 +76,7 @@ class Command extends BaseAliasPiece_1.BaseAliasPiece {
             ...super.toJSON(),
             description: this.description,
             detailedDescription: this.detailedDescription,
-            flags: this.flags
+            strategy: this.strategy
         };
     }
 }
