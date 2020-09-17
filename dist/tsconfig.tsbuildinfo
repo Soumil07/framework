@@ -647,7 +647,7 @@
         "affectsGlobalScope": false
       },
       "../src/lib/utils/strategies/FlagUnorderedStrategy.ts": {
-        "version": "7748469d38fc70d6111c89b760d86d078afd28cd64679cff1dcc6737af9b4a81",
+        "version": "c238841d8b0bba59a79c337d9f8e73d292380f3dd03e58baf81c2511d133c78a",
         "signature": "8e65131158ef80ddc615a4ba7ec3737a4fbbda0821a5a7295d4766d473ede976",
         "affectsGlobalScope": false
       },
@@ -662,13 +662,13 @@
         "affectsGlobalScope": false
       },
       "../src/lib/utils/Args.ts": {
-        "version": "5e51282f1744f3e68c40ad62673ce3f1b75da6c1aa34d03b383df4d99a9170dd",
-        "signature": "9b0dc28327bfe99872ad5b5e494c9e59189b6dd14523a3c9995c5650c6a5b2e2",
+        "version": "8e0ac79c55ca2d7bbb68600b0c2300a192903ba44da20c361930eb0434a081a2",
+        "signature": "7b3d79eab455d2c9ca50169c1227a99c79c5d099ad83d8d3d115cb05f8ec7963",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/Argument.ts": {
-        "version": "497c89cc9a8976ce7511ef0b0c57b1fa24e3d59f030bc67ede17a213a3bb1258",
-        "signature": "7d19e3fae757403dcedefa11cfa9b811a0f56b3ef197f419a9eadac56f6a2cdb",
+        "version": "9113a80bc472582612b3d7bc12eb034caf79bb5fa554a552620bc88720926790",
+        "signature": "ce11e2d981bfa73335bb49b202bef466b31792be13320ba81399336a7d59853f",
         "affectsGlobalScope": false
       },
       "../src/lib/errors/ArgumentError.ts": {
@@ -706,24 +706,24 @@
         "signature": "c7dc81917e7a3a5f9fd215701356eb56a839273a1afcbde6cfcbb0f782cffa3d",
         "affectsGlobalScope": false
       },
-      "../src/lib/structures/base/BaseStore.ts": {
-        "version": "626c7b832c0428925ff446bc540852319bc4d262e38b8287df3e8f86668d041d",
-        "signature": "7ce5a2ff4259fb75eed897213e53fa3ce66b827720ac285487d2c60cb0534905",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/structures/ArgumentStore.ts": {
-        "version": "5d2468b2898bc35eab36b36820fddcc76e6096cbc3ef646cdf0803832979c0b7",
-        "signature": "6ba4e5b529664f898ea5d8373b19dcfb9c79c0d2ab9e115eb01cf8ef1b987b55",
-        "affectsGlobalScope": false
-      },
       "../src/lib/structures/base/BaseAliasStore.ts": {
         "version": "6f66d57501f28bf962564464159b30f271142885fdce9fcfc13b6c4a3078ec5a",
         "signature": "8745f8821fa735bf0faa392f990ea6d14dda6a66151cd656a7e0715e6271e2b2",
         "affectsGlobalScope": false
       },
+      "../src/lib/structures/ArgumentStore.ts": {
+        "version": "4e11719eb913a4c3aab9f1424e95cad196983a49530e2c021ac5b7eed297c53d",
+        "signature": "a08680821307cc57625959f2869fd76328f001761d0a1ff13aeb34ebb42aa3c2",
+        "affectsGlobalScope": false
+      },
       "../src/lib/structures/CommandStore.ts": {
         "version": "a06c11bfdbb36869f3334062456f6d6e96fec9df7499b5287ea7f40d5df73885",
         "signature": "9e2911e366c41eacd273a7e51a9e647f8e9090e12a0b764fbbe6463a31257788",
+        "affectsGlobalScope": false
+      },
+      "../src/lib/structures/base/BaseStore.ts": {
+        "version": "626c7b832c0428925ff446bc540852319bc4d262e38b8287df3e8f86668d041d",
+        "signature": "7ce5a2ff4259fb75eed897213e53fa3ce66b827720ac285487d2c60cb0534905",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/EventStore.ts": {
@@ -776,14 +776,74 @@
         "signature": "781dca30ddaff80564aa0ab58fc73eca7957bdb5698c4d3a9bda7b913be7de43",
         "affectsGlobalScope": false
       },
+      "../src/arguments/CoreChannel.ts": {
+        "version": "823867186d9c6b71f1efbda946646b043977e17c473a883b728a20f33466bb3b",
+        "signature": "07f416c5ab618633a36268cec96a3f54ab21fae08daad98018e455abcd8cae68",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreDMChannel.ts": {
+        "version": "fbadc7a244f29d7df34d66bd961f9ed1e7e3086b5e5e1435999b446deecf134f",
+        "signature": "d79f33d0e9898f563c1ef4941a91fffac6dc9b8a1fd88418be0dab736f8a9bae",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreDate.ts": {
+        "version": "3459210acb3f035bbacd8e6b8d4442550746198b79d852d94ef56965e363e84e",
+        "signature": "747f86d7084cc5fffde9064e640c84a05f2f7a86edd6758ea39ebcef11b3fb22",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreFloat.ts": {
+        "version": "546ddf9f388702d154c3f77595757259352796c2f068df5d341b4e51c86d02c3",
+        "signature": "e4904c4c799cf64ad39109f05b429a71103bd62ce6ee2882433e3174c1391189",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreHyperlink.ts": {
+        "version": "eaf71e4fc126400d7a5bb914be390654cdd95727fe0f2019fb0444b85badf4e1",
+        "signature": "6a9216db5cf1df4b2dfe364a6b79435ad09828c0a7562309e925fb0b5f86fa68",
+        "affectsGlobalScope": false
+      },
       "../src/arguments/CoreInteger.ts": {
         "version": "e997f98f5cc09cbdda7cadfec942f37d9e51ff873468e339a2846eda4499c6a2",
         "signature": "a161dcf9d2f038e4955279881f6a9d09f3c5e86d5df82aff7a200b87a78e5323",
         "affectsGlobalScope": false
       },
+      "../src/arguments/CoreMember.ts": {
+        "version": "8e173eee59c0748897b8896f0d6f599f5d33f499bf1e919ec728edf9619b0400",
+        "signature": "c9382179be13b2885c302a9ddd52db1dd545d84bd5df419e7f4f20456a68b0cb",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreNewsChannel.ts": {
+        "version": "87bfdcda0537049fca4bf6c2c843aa34cea402be7cd7534fda71337e8c1e64eb",
+        "signature": "fac7c5ea09dee14c2884c3dc11bee1980f7898e0de853011f09c566b44c14d24",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreNumber.ts": {
+        "version": "ed2530bda018468987446cd5beac4a58005a0dc38ad10ff9ca926ccf56e2dce1",
+        "signature": "15ac560c388e61cff2632339334f5345239e9277a728ddd8ac872065f3b7b8a5",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreRole.ts": {
+        "version": "c04caa6e99fbe5990be4a92c39f86c0143968bf731f4fa01b4e4adc66774c48b",
+        "signature": "9f8e3804ccf71bc66230c1f9bd747d2fcd2e58ff9a5e5228d3ee621457fb3d83",
+        "affectsGlobalScope": false
+      },
       "../src/arguments/CoreString.ts": {
         "version": "b4a650af57adb4e70e577fa7563bea825bca1e618d1bf95718953af759ddc5ae",
         "signature": "ffc027e5affe9eee48c01ad2425d7d5fed0e138df5ee7880f2452474cab46f89",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreTextChannel.ts": {
+        "version": "7980ec48dd0fe7fd36d41a3893dc2f0592451d6177c7ae09e67f5be99fc79a45",
+        "signature": "28d646351270e6b88d371423c08b53ce5d81ab529681764757ad4f099877672c",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreUser.ts": {
+        "version": "9daa2d84af161a2b7acaa23b4164b7e145299dd578a0ef1861c0eab47ecb1e1c",
+        "signature": "b097afd11e0157a809f4e340369f048de18b345e12a42a98778897c0bec54f64",
+        "affectsGlobalScope": false
+      },
+      "../src/arguments/CoreVoiceChannel.ts": {
+        "version": "12868113f7f354399a3edfb6156cfa92d8c7843b8c1d950231c565134c7740f0",
+        "signature": "1b5b45570b070e50ea885d9cc58d4d23858657d0e95bead4d4dca3bf5c3e9215",
         "affectsGlobalScope": false
       },
       "../src/events/CoreReady.ts": {
@@ -2533,6 +2593,64 @@
         "../node_modules/@types/node/ts3.4/process.d.ts",
         "../node_modules/@types/node/ts3.4/util.d.ts"
       ],
+      "../src/arguments/CoreChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreDMChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreDate.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreFloat.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreHyperlink.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/url.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
       "../src/arguments/CoreInteger.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -2544,6 +2662,53 @@
         "../node_modules/@types/node/ts3.4/util.d.ts",
         "../src/lib/structures/Argument.ts"
       ],
+      "../src/arguments/CoreMember.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreNewsChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreNumber.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreRole.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
       "../src/arguments/CoreString.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -2553,6 +2718,42 @@
         "../node_modules/@types/node/ts3.4/fs.d.ts",
         "../node_modules/@types/node/ts3.4/process.d.ts",
         "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreTextChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreUser.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreVoiceChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/ts3.1/fs.d.ts",
+        "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/util.d.ts",
+        "../node_modules/@types/node/ts3.4/fs.d.ts",
+        "../node_modules/@types/node/ts3.4/process.d.ts",
+        "../node_modules/@types/node/ts3.4/util.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/structures/Argument.ts"
       ],
       "../src/events/CoreReady.ts": [
@@ -2770,7 +2971,7 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/errors/UserError.ts",
         "../src/lib/structures/Command.ts",
-        "../src/lib/structures/base/BasePiece.ts",
+        "../src/lib/structures/base/BaseAliasPiece.ts",
         "../src/lib/utils/Args.ts",
         "../src/lib/utils/Result.ts",
         "../src/lib/utils/Types.ts"
@@ -2785,7 +2986,7 @@
         "../node_modules/@types/node/ts3.4/util.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/structures/Argument.ts",
-        "../src/lib/structures/base/BaseStore.ts"
+        "../src/lib/structures/base/BaseAliasStore.ts"
       ],
       "../src/lib/structures/Command.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
@@ -2947,6 +3148,7 @@
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/ts3.1/fs.d.ts",
         "../node_modules/@types/node/ts3.1/process.d.ts",
+        "../node_modules/@types/node/ts3.1/url.d.ts",
         "../node_modules/@types/node/ts3.1/util.d.ts",
         "../node_modules/@types/node/ts3.4/fs.d.ts",
         "../node_modules/@types/node/ts3.4/process.d.ts",
@@ -4666,12 +4868,69 @@
         "../node_modules/@types/node/ts3.4/process.d.ts",
         "../node_modules/@types/node/ts3.4/util.d.ts"
       ],
+      "../src/arguments/CoreChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreDMChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreDate.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreFloat.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreHyperlink.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/@types/node/ts3.1/url.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
       "../src/arguments/CoreInteger.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../src/lib/structures/Argument.ts"
       ],
+      "../src/arguments/CoreMember.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreNewsChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreNumber.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreRole.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
       "../src/arguments/CoreString.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreTextChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreUser.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/lib/structures/Argument.ts"
+      ],
+      "../src/arguments/CoreVoiceChannel.ts": [
+        "../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/structures/Argument.ts"
       ],
       "../src/events/CoreReady.ts": [
@@ -4779,14 +5038,14 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/errors/UserError.ts",
         "../src/lib/structures/Command.ts",
-        "../src/lib/structures/base/BasePiece.ts",
+        "../src/lib/structures/base/BaseAliasPiece.ts",
         "../src/lib/utils/Result.ts",
         "../src/lib/utils/Types.ts"
       ],
       "../src/lib/structures/ArgumentStore.ts": [
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/lib/structures/Argument.ts",
-        "../src/lib/structures/base/BaseStore.ts"
+        "../src/lib/structures/base/BaseAliasStore.ts"
       ],
       "../src/lib/structures/Command.ts": [
         "../node_modules/@sapphire/pieces/dist/index.d.ts",
@@ -4855,6 +5114,7 @@
         "../src/lib/types/Enums.ts"
       ],
       "../src/lib/utils/Args.ts": [
+        "../node_modules/@types/node/ts3.1/url.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/lexure/dist/types/index.d.ts",
         "../src/lib/errors/ArgumentError.ts",
@@ -5082,8 +5342,20 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.esnext.promise.d.ts",
       "../node_modules/typescript/lib/lib.esnext.string.d.ts",
+      "../src/arguments/CoreChannel.ts",
+      "../src/arguments/CoreDMChannel.ts",
+      "../src/arguments/CoreDate.ts",
+      "../src/arguments/CoreFloat.ts",
+      "../src/arguments/CoreHyperlink.ts",
       "../src/arguments/CoreInteger.ts",
+      "../src/arguments/CoreMember.ts",
+      "../src/arguments/CoreNewsChannel.ts",
+      "../src/arguments/CoreNumber.ts",
+      "../src/arguments/CoreRole.ts",
       "../src/arguments/CoreString.ts",
+      "../src/arguments/CoreTextChannel.ts",
+      "../src/arguments/CoreUser.ts",
+      "../src/arguments/CoreVoiceChannel.ts",
       "../src/events/CoreReady.ts",
       "../src/events/command-handler/CoreCommandAccepted.ts",
       "../src/events/command-handler/CoreMessageParser.ts",

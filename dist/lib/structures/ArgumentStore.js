@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ArgumentStore = void 0;
 const Argument_1 = require("./Argument");
-const BaseStore_1 = require("./base/BaseStore");
-class ArgumentStore extends BaseStore_1.BaseStore {
+const BaseAliasStore_1 = require("./base/BaseAliasStore");
+class ArgumentStore extends BaseAliasStore_1.BaseAliasStore {
     constructor(client) {
         super(client, Argument_1.Argument, { name: 'arguments' });
     }

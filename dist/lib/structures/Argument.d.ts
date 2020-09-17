@@ -2,14 +2,15 @@ import type { Message } from 'discord.js';
 import type { UserError } from '../errors/UserError';
 import { Result } from '../utils/Result';
 import type { Awaited } from '../utils/Types';
-import { BasePiece } from './base/BasePiece';
+import { BaseAliasPiece } from './base/BaseAliasPiece';
 import type { Command } from './Command';
 export declare type ArgumentResult<T> = Awaited<Result<T, UserError>>;
+export declare type AsyncArgumentResult<T> = Promise<Result<T, UserError>>;
 export interface IArgument<T> {
     readonly name: string;
     run(argument: string, context: ArgumentContext): ArgumentResult<T>;
 }
-export declare abstract class Argument<T = unknown> extends BasePiece implements IArgument<T> {
+export declare abstract class Argument<T = unknown> extends BaseAliasPiece implements IArgument<T> {
     abstract run(argument: string, context: ArgumentContext): ArgumentResult<T>;
     ok(value: T): ArgumentResult<T>;
     /**

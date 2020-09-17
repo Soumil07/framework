@@ -37,18 +37,15 @@ class FlagUnorderedStrategy {
     }
     matchCompactOption(s) {
         const pre = this.prefixes.find((x) => s.startsWith(x));
-        if (pre == null) {
+        if (!pre)
             return null;
-        }
         s = s.slice(pre.length);
         const sep = this.separators.find((x) => s.includes(x));
-        if (sep == null) {
+        if (!sep)
             return null;
-        }
         const i = s.indexOf(sep);
-        if (i + sep.length === s.length) {
+        if (i + sep.length === s.length)
             return null;
-        }
         const k = s.slice(0, i);
         if (!this.options.includes(k))
             return null;

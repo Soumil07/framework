@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Argument = void 0;
 const Args_1 = require("../utils/Args");
 const Result_1 = require("../utils/Result");
-const BasePiece_1 = require("./base/BasePiece");
-class Argument extends BasePiece_1.BasePiece {
+const BaseAliasPiece_1 = require("./base/BaseAliasPiece");
+class Argument extends BaseAliasPiece_1.BaseAliasPiece {
     ok(value) {
         return Result_1.ok(value);
     }
