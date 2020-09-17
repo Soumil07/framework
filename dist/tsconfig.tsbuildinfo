@@ -707,8 +707,8 @@
         "affectsGlobalScope": false
       },
       "../src/lib/types/Events.ts": {
-        "version": "462e267a4175effcd78376ab9e6327d9d4e6d9f7138e5287fea8f5564d0778dc",
-        "signature": "c7dc81917e7a3a5f9fd215701356eb56a839273a1afcbde6cfcbb0f782cffa3d",
+        "version": "c0bdad9442ef5be94be418452d9a5b16a8867996f4189a0f90c9f2060c1c4ff4",
+        "signature": "4fc570dcee54a3b0ea4a5c9dacf1e64c3f7acb919f89fe4f236a2bfd2a57c25f",
         "affectsGlobalScope": false
       },
       "../src/lib/structures/base/BaseAliasStore.ts": {
@@ -862,7 +862,7 @@
         "affectsGlobalScope": false
       },
       "../src/events/command-handler/CoreCommandAccepted.ts": {
-        "version": "3d90ea3b6f0550f1648c8e771f7e098d561ef81f8f92dd94e0eb9a83da12a605",
+        "version": "70dc8edcaee6d64497e5b7f84e157bed0159809c2f1bb68ada2409a63f482a15",
         "signature": "817bbe80085893c374381074c57a6f162ed6de996bfab65befb4de9ea8bba7a7",
         "affectsGlobalScope": false
       },

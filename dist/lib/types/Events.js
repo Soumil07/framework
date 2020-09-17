@@ -67,6 +67,7 @@ var Events;
     Events["CommandDenied"] = "commandDenied";
     Events["CommandAccepted"] = "commandAccepted";
     Events["CommandRun"] = "commandRun";
+    Events["CommandSuccess"] = "commandSuccess";
     Events["CommandFinish"] = "commandFinish";
     Events["CommandError"] = "commandError";
     Events["PluginLoaded"] = "pluginLoaded";
