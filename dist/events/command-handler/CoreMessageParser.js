@@ -1,15 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CoreEvent = void 0;
+const discord_js_1 = require("discord.js");
 const Event_1 = require("../../lib/structures/Event");
 const Events_1 = require("../../lib/types/Events");
 class CoreEvent extends Event_1.Event {
     constructor(context) {
         super(context, { event: Events_1.Events.Message });
+        this.requiredPermissions = new discord_js_1.Permissions(['VIEW_CHANNEL', 'SEND_MESSAGES']);
     }
     async run(message) {
-        // Stop bots from running commands.
-        if (message.author.bot)
+        // Stop bots and webhooks from running commands.
+        if (message.author.bot || message.webhookID)
+            return;
+        // If the bot cannot run the command due to lack of permissions, return.
+        const canRun = await this.canRunInChannel(message);
+        if (!canRun)
             return;
         let prefix = '';
         const mentionPrefix = this.getMentionPrefix(message.content);
@@ -28,6 +34,16 @@ class CoreEvent extends Event_1.Event {
         }
         if (prefix)
             this.client.emit(Events_1.Events.PrefixedMessage, message, prefix);
+    }
+    async canRunInChannel(message) {
+        var _a;
+        if (message.channel.type === 'dm')
+            return true;
+        const me = (_a = message.guild.me) !== null && _a !== void 0 ? _a : (this.client.id ? await message.guild.members.fetch(this.client.id) : null);
+        if (!me)
+            return false;
+        const channel = message.channel;
+        return channel.permissionsFor(me).has(this.requiredPermissions, false);
     }
     getMentionPrefix(content) {
         // If no client ID was specified, return null:

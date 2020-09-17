@@ -1,10 +1,12 @@
 import type { PieceContext } from '@sapphire/pieces';
-import type { Message } from 'discord.js';
+import { Message } from 'discord.js';
 import { Event } from '../../lib/structures/Event';
 import { Events } from '../../lib/types/Events';
 export declare class CoreEvent extends Event<Events.Message> {
+    private requiredPermissions;
     constructor(context: PieceContext);
     run(message: Message): Promise<void>;
+    private canRunInChannel;
     private getMentionPrefix;
     private getPrefix;
 }

@@ -797,8 +797,8 @@
         "affectsGlobalScope": false
       },
       "../src/events/command-handler/CoreMessageParser.ts": {
-        "version": "b848550bf6ae53a9609a5b65fa10457f208e873fd2c8b4493732ebcceb158355",
-        "signature": "a19b348296501ccc142c1be95cb569dcb4a6ab2838b0c95d91aa7bdb407f1f39",
+        "version": "42bffc88b2b7db313f411ce74c2d46019801b538860f8b9d180189259d18e6c4",
+        "signature": "521ed2802eefb275f55b2b4d1f01fca9ce74d879a9d30d8025f6f0f0d183683d",
         "affectsGlobalScope": false
       },
       "../src/events/command-handler/CorePreCommandRun.ts": {
