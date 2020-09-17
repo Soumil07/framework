@@ -40,6 +40,7 @@ __exportStar(require("./lib/utils/i18n/IInternationalization"), exports);
 __exportStar(require("./lib/utils/i18n/Internationalization"), exports);
 __exportStar(require("./lib/utils/logger/ILogger"), exports);
 __exportStar(require("./lib/utils/logger/Logger"), exports);
+__exportStar(require("./lib/utils/preconditions/containers/PermissionsPrecondition"), exports);
 __exportStar(require("./lib/utils/preconditions/IPreconditionContainer"), exports);
 __exportStar(require("./lib/utils/preconditions/PreconditionContainer"), exports);
 __exportStar(require("./lib/utils/preconditions/PreconditionContainerAny"), exports);

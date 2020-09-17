@@ -2,10 +2,11 @@ import type { Client, Message } from 'discord.js';
 import type { Command } from '../../structures/Command';
 import type { Precondition, PreconditionContext } from '../../structures/Precondition';
 import type { IPreconditionContainer } from './IPreconditionContainer';
-export declare type PreconditionContainerSingleResolvable = string | {
+export interface PreconditionContainerSingleEntry {
     entry: string;
     context: PreconditionContext;
-};
+}
+export declare type PreconditionContainerSingleResolvable = string | PreconditionContainerSingleEntry;
 export declare class PreconditionContainerSingle implements IPreconditionContainer {
     readonly client: Client;
     readonly context: PreconditionContext;

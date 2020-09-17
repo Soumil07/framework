@@ -7,7 +7,7 @@ const Events_1 = require("../../lib/types/Events");
 class CoreEvent extends Event_1.Event {
     constructor(context) {
         super(context, { event: Events_1.Events.Message });
-        this.requiredPermissions = new discord_js_1.Permissions(['VIEW_CHANNEL', 'SEND_MESSAGES']);
+        this.requiredPermissions = new discord_js_1.Permissions(['VIEW_CHANNEL', 'SEND_MESSAGES']).freeze();
     }
     async run(message) {
         // Stop bots and webhooks from running commands.
