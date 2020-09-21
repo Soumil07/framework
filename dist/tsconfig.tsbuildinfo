@@ -777,7 +777,7 @@
         "affectsGlobalScope": false
       },
       "../src/arguments/CoreFloat.ts": {
-        "version": "546ddf9f388702d154c3f77595757259352796c2f068df5d341b4e51c86d02c3",
+        "version": "358f0b8abfea9b7735db8650e8bff3f564d67a3730d2b8552d95caaad08c6775",
         "signature": "e4904c4c799cf64ad39109f05b429a71103bd62ce6ee2882433e3174c1391189",
         "affectsGlobalScope": false
       },
